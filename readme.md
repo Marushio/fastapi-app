@@ -66,3 +66,14 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 - Para reiniciar o banco, basta apagar o arquivo `escola.db` (isso apagará todos os dados).
 
 ---
+## Google Cloud
+
+**Instalacao gcloud: https://cloud.google.com/sdk/docs/install#deb**
+
+**Autenticando no Google Cloud:**
+
+```sh
+gcloud auth login
+gcloud config set project PROJECT_ID
+gcloud run deploy --port=8000
+```
