@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    container_name: fastapi-app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app #Monta o diretorio atual em /app, permitindo que as alteracoes no codigo sejam refletidas automaticamente no container devido ao --reload do uvicorn.
